@@ -17,10 +17,14 @@
                 <!-- <img class='mx-auto d-block img-fluid img-thubnail' id='collegebgimg' src='./img/collegebg4.jpg' alt='CollegeBG' /> -->
             </div>
             <div class="my-page">
-                Page one
+                <h1 class='text-center pt-1'>Content Table</h1>
             </div>
             <div class="my-page">
-                Page two
+                <ul>
+                    <li>
+                        <a href='#' onclick="jumpToPage()">ProfilePage</a>
+                    </li>
+                </ul>
             </div>
             <div class="my-page">
                 Page three
@@ -49,6 +53,10 @@
             }
         );
             pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
+
+            function jumpToPage(){
+                pageFlip.flip(5, 'bottom');
+            }
         </script>
     </body>
 </html>
