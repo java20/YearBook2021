@@ -1,12 +1,1 @@
-*{
-    color: white;
-}
-
-div.my-page{
-    background-image: url('/img/collegebg2.jpg');
-
-}
-#book{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
+*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}*{color:white}div.my-page{background-image:url("/img/collegebg2.jpg")}#book{margin-top:5%;margin-bottom:5%}
