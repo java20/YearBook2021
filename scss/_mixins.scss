@@ -2,3 +2,20 @@
 	background: #d4af37;
 	background: linear-gradient(to bottom, #d4af37 0%, #c5a028 100%);
 }
+
+@mixin pageCoverBack {
+	background: linear-gradient(
+		123deg,
+		#2e99b0 0%,
+		#2e99b0 40%,
+		#fcd77f calc(40% + 1px),
+		#fcd77f 60%,
+		#ff2e4c calc(60% + 1px),
+		#ff2e4c 75%,
+		#1e1548 calc(75% + 1px),
+		#1e1548 100%
+	);
+
+	color: var(--color-grey-dark3);
+	font-family: var(--font-cover);
+}

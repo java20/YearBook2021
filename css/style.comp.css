@@ -11,6 +11,7 @@
   --color-grey-dark2: #464646;
   --color-grey-dark3: #2e2e2e;
   --color-primary: #003a6a;
+  --color-golden: #d4af37;
   --shadow: 5px 5px 2rem 9px var(--color-grey-light2);
   --shadow2: 5px 1px 1rem 10px var(--color-grey-light1); }
 
@@ -63,7 +64,7 @@ body {
     padding: 5rem 0;
     line-height: 1.5;
     word-spacing: 7px;
-    border: 0.15rem solid #d4af37; }
+    border: 0.15rem solid var(--color-golden); }
     @media only screen and (max-width: 56.25em) {
       .coverpage__content {
         padding: 3rem 0; } }
@@ -85,3 +86,23 @@ body {
       @media only screen and (max-width: 56.25em) {
         .coverpage__heading-sub {
           font-size: 1.5rem; } }
+
+.backpage {
+  background: linear-gradient(123deg, #2e99b0 0%, #2e99b0 40%, #fcd77f calc(40% + 1px), #fcd77f 60%, #ff2e4c calc(60% + 1px), #ff2e4c 75%, #1e1548 calc(75% + 1px), #1e1548 100%);
+  color: var(--color-grey-dark3);
+  font-family: var(--font-cover); }
+  .backpage__content {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border: 0.15rem solid var(--color-golden);
+    padding: 0.5rem; }
+  .backpage__quotes {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: var(--font-cover); }
+    @media only screen and (max-width: 56.25em) {
+      .backpage__quotes {
+        font-size: 2rem; } }
