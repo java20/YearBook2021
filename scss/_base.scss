@@ -40,4 +40,8 @@ body {
 	color: var(--color-grey-dark3);
 	grid-template-columns: repeat(12, 1fr);
 	background: var(--color-grey-light3);
+
+	@media only screen and (max-width: $bp-medium) {
+		font-size: 50%;
+	}
 }

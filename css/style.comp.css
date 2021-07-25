@@ -29,6 +29,9 @@ body {
   color: var(--color-grey-dark3);
   grid-template-columns: repeat(12, 1fr);
   background: var(--color-grey-light3); }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      font-size: 50%; } }
 
 .main-content {
   grid-column: 2/-2;
@@ -44,6 +47,9 @@ body {
   padding: 1rem;
   background-color: white;
   box-shadow: var(--shadow2); }
+  @media only screen and (max-width: 56.25em) {
+    .page {
+      padding: 0.5rem; } }
 
 .coverpage {
   background: linear-gradient(123deg, #2e99b0 0%, #2e99b0 40%, #fcd77f calc(40% + 1px), #fcd77f 60%, #ff2e4c calc(60% + 1px), #ff2e4c 75%, #1e1548 calc(75% + 1px), #1e1548 100%);
@@ -58,12 +64,24 @@ body {
     line-height: 1.5;
     word-spacing: 7px;
     border: 0.15rem solid #d4af37; }
+    @media only screen and (max-width: 56.25em) {
+      .coverpage__content {
+        padding: 3rem 0; } }
   .coverpage__logo {
     width: 10rem;
     height: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .coverpage__logo {
+        width: 5rem; } }
   .coverpage__heading {
     padding: 0;
     font-size: 6rem;
     font-weight: 300; }
+    @media only screen and (max-width: 56.25em) {
+      .coverpage__heading {
+        font-size: 4rem; } }
     .coverpage__heading-sub {
       font-size: 3rem; }
+      @media only screen and (max-width: 56.25em) {
+        .coverpage__heading-sub {
+          font-size: 1.5rem; } }
