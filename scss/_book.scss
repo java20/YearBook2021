@@ -2,9 +2,6 @@
 	box-shadow: var(--shadow);
 }
 
-div.my-page {
-	background-image: url("/img/collegebg2.jpg");
-}
 
 #book{
 	margin-top: 5%;
@@ -28,14 +25,18 @@ div.mycontainer{
 	margin: 5% 5%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-auto-rows: 250px;
-	grid-gap: 1em;
+	grid-auto-rows: 25rem;
+	grid-gap: 1rem;
 	justify-items: center;
+	align-items: center;
 	white-space: nowrap;
+	@media only screen and (max-width: $bp-medium) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .mycontainer > div{
-	padding: 1em;
+	padding: 1rem;
 }
 
 .ProfileImageContainer{
