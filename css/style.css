@@ -1,1 +1,47 @@
-*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}*{color:white}div.my-page{background-image:url("/img/collegebg2.jpg")}#book{margin-top:5%;margin-bottom:5%}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+* {
+  color: white; }
+
+div.my-page {
+  background-image: url("/img/collegebg2.jpg"); }
+
+#book {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+div.inner-page {
+  background-image: none;
+  background-image: linear-gradient(#181818, #404040); }
+
+div.mycontainer {
+  margin: 5% 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 250px;
+  grid-gap: 1em;
+  justify-items: center;
+  white-space: nowrap; }
+
+.mycontainer > div {
+  padding: 1em; }
+
+.ProfileImageContainer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px; }
+
+.userprofile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
