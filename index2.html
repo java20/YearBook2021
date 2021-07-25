@@ -1,83 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>YearBook-2021</title>
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body>
-		<main class="main-content">
-			<div class="book" id="book">
-				<div class="my-page page coverpage" data-density="hard">
-					<div class="coverpage__content">
-						<img src="./img/taelogo.png" class="coverpage__logo" />
-						<h1 class="coverpage__heading">YearBook</h1>
-						<p class="coverpage__heading-sub">Batch of 2021</p>
-					</div>
-				</div>
-				<div class="my-page page">
-					<h1 class='text-center pt-1'>Content Table</h1>
-					<ul>
-						<li>
-							<a href='#' onclick="jumpToPage()">ProfilePage</a>
-						</li>
-					</ul>
-				</div>
-				<div class="my-page inner-page page">
-					<div class='mycontainer'>
-						<div class='userprofile'>
-							<img src='./img/TusharProfile.JPG' class='ProfileImageContainer' alt='TusharImage'>
-							<p>Tushar kashinath Gaikawad</p>
-						</div>
-						<div class='userprofile'>
-							<img src='./img/SatishProfile.png' class='ProfileImageContainer' alt='SatishImage'>
-							<p>Satish Belwadkar</p>
-						</div>
-						<div class='userprofile'>
-							<img src='./img/DayanandProfile.jpeg' class='ProfileImageContainer' alt='DayanandImage'>
-							<p>More Dayanand Sampat</p>
-						</div>
-						<div class='userprofile'>
-							<img src='./img/SnehaProfile.jpeg' class='ProfileImageContainer' alt='SnehaImage'>
-							<p>Sneha Sambhaji Patil</p>
-						</div>
-	
-					</div>
-				</div>
-				<div class="my-page page">page 3</div>
-				<div class="my-page page" data-density="hard">page 4</div>
-				<div class="my-page page backpage">
-					<div class="backpage__content">
-						<p class="backpage__quotes">
-							&ldquo; Here's to the nights that turned into mornings with the friends that turned into
-							family.&rdquo;
-						</p>
-					</div>
-				</div>
-			</div>
-		</main>
-	</body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>YearBook2021</title>
+        <link rel='stylesheet' href='./css/style.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src='./js/page-flip.browser.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body class='container'>
+        <div id="book">
+            <div class="my-page container" data-density="hard">
+                <h1 class='text-center pt-1'>YearBook 2021 Batch</h1>
+                <img class='mx-auto d-block img-fluid' src='./img/taelogo.png' alt='TaeLogo' />
+            </div>
+            <div class="my-page">
+                <h1 class='text-center pt-1'>Content Table</h1>
+                <ul>
+                    <li>
+                        <a href='#' onclick="jumpToPage()">ProfilePage</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-page inner-page page">
+                <div class='mycontainer'>
+                    <div class='userprofile'>
+                        <img src='./img/TusharProfile.JPG' class='ProfileImageContainer' alt='TusharImage'>
+                        <p>Tushar kashinath Gaikawad</p>
+                    </div>
+                    <div class='userprofile'>
+                        <img src='./img/SatishProfile.png' class='ProfileImageContainer' alt='SatishImage'>
+                        <p>Satish Belwadkar</p>
+                    </div>
+                    <div class='userprofile'>
+                        <img src='./img/DayanandProfile.jpeg' class='ProfileImageContainer' alt='DayanandImage'>
+                        <p>More Dayanand Sampat</p>
+                    </div>
+                    <div class='userprofile'>
+                        <img src='./img/SnehaProfile.jpeg' class='ProfileImageContainer' alt='SnehaImage'>
+                        <p>Sneha Sambhaji Patil</p>
+                    </div>
+                    <!-- <div>
+                        <img src='./img/ShipraProfile.jpg' class='ProfileImageContainer' alt='ShipraImage'>
+                        Shipra Banerjee
+                    </div>
+                    <div>
+                        <img src='./img/AzharProfile.jpg' class='ProfileImageContainer' alt='AzharImage'>
+                        Azhar Hakim 
+                    </div> -->
 
-	<script src="./js/page-flip.browser.js"></script>
+                </div>
+            </div>
+            <div class="my-page">
+                
+            </div>
+            <div class="my-page">
+                Page four
+            </div>
+            <div class="my-page" data-density="hard">
+                Last page
+            </div>
+        </div>
+        <script>
+            const pageFlip = new St.PageFlip(document.getElementById('book'),
+            {
+                width: 550, // base page width
+                height: 733, // base page height
 
-	<script>
-		const pageFlip = new St.PageFlip(document.getElementById("book"), {
-			width: 550, // base page width
-			height: 733, // base page height
+                size: "stretch",
+            // set threshold values:
+                minWidth: 315,
+                maxWidth: 1000,
+                minHeight: 420,
+                maxHeight: 1350,
+                showCover: true,
+                flippingTime: 500
+            }
+        );
+            pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
 
-			size: "stretch",
-			// set threshold values:
-			minWidth: 315,
-			maxWidth: 1000,
-			minHeight: 420,
-			maxHeight: 1350,
-			showCover: true,
-			flippingTime: 500,
-		});
-		pageFlip.loadFromHTML(document.querySelectorAll(".my-page"));
-
-		function jumpToPage() {
-			pageFlip.flip(5, "bottom");
-		}
-	</script>
+            function jumpToPage(){
+                pageFlip.flip(5, 'bottom');
+            }
+        </script>
+    </body>
 </html>
