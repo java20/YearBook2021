@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>YearBook-2021</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<main class="main-content">
+			<div class="book" id="book">
+				<div class="my-page page coverpage" data-density="hard">
+					<div class="coverpage__content">
+						<img src="./img/taelogo.png" class="coverpage__logo" />
+						<h1 class="coverpage__heading">YearBook</h1>
+						<p class="coverpage__heading-sub">Batch of 2021</p>
+					</div>
+				</div>
+				<div class="my-page page">page 1</div>
+				<div class="my-page page">page 2</div>
+				<div class="my-page page">page 3</div>
+				<div class="my-page page">page 4</div>
+				<div class="my-page page">page 5</div>
+				<div class="my-page page backpage" data-density="hard">backpage</div>
+				<div class="my-page page"></div>
+			</div>
+		</main>
+	</body>
+
+	<script src="./js/page-flip.browser.js"></script>
+
+	<script>
+		const pageFlip = new St.PageFlip(document.getElementById("book"), {
+			width: 550, // base page width
+			height: 733, // base page height
+
+			size: "stretch",
+			// set threshold values:
+			minWidth: 315,
+			maxWidth: 1000,
+			minHeight: 420,
+			maxHeight: 1350,
+			showCover: true,
+			flippingTime: 500,
+		});
+		pageFlip.loadFromHTML(document.querySelectorAll(".my-page"));
+
+		function jumpToPage() {
+			pageFlip.flip(5, "bottom");
+		}
+	</script>
+</html>

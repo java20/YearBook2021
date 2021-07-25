@@ -1,0 +1,4 @@
+@mixin goldenLine {
+	background: #d4af37;
+	background: linear-gradient(to bottom, #d4af37 0%, #c5a028 100%);
+}

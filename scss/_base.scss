@@ -1,7 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Great+Vibes&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,300;1,400&family=Sail&display=swap");
+
+:root {
+	// FONTS
+	--font-signature: "Sail", cursive;
+	--font-quotes: "Euphoria Script", cursive;
+	--font-cover: "Great Vibes", cursive;
+	--font-normal: "Nunito", sans-serif;
+
+	// COLORS
+	--color-grey-light1: #d8d8d8;
+	--color-grey-light2: #ebebeb;
+	--color-grey-light3: #fafafa;
+
+	--color-grey-dark1: #616161;
+	--color-grey-dark2: #464646;
+	--color-grey-dark3: #2e2e2e;
+
+	--color-primary: #003a6a;
+
+	// SHADOWS
+	--shadow: 5px 5px 2rem 9px var(--color-grey-light2);
+	--shadow2: 5px 1px 1rem 10px var(--color-grey-light1);
+}
+
 *,
 *::after,
 *::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--font-normal);
+	font-size: 62.5%;
+	height: 100vh;
+	// overflow: hidden;
+	display: grid;
+	color: var(--color-grey-dark3);
+	grid-template-columns: repeat(12, 1fr);
+	background: var(--color-grey-light3);
 }
