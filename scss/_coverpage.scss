@@ -1,0 +1,43 @@
+.coverpage {
+	@include pageCoverBack;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		padding: 5rem 0;
+		line-height: 1.5;
+		word-spacing: 7px;
+		border: 0.15rem solid var(--color-golden);
+
+		@media only screen and (max-width: $bp-medium) {
+			padding: 3rem 0;
+		}
+	}
+
+	&__logo {
+		width: 10rem;
+		height: auto;
+		@media only screen and (max-width: $bp-medium) {
+			width: 5rem;
+		}
+	}
+
+	&__heading {
+		padding: 0;
+		font-size: 6rem;
+		font-weight: 300;
+
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 4rem;
+		}
+
+		&-sub {
+			font-size: 3rem;
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

@@ -1,5 +1,5 @@
-* {
-	color: white;
+.book {
+	box-shadow: var(--shadow);
 }
 
 div.my-page {
@@ -9,6 +9,13 @@ div.my-page {
 #book{
 	margin-top: 5%;
 	margin-bottom: 5%;
+.page {
+	padding: 1rem;
+	background-color: white;
+	box-shadow: var(--shadow2);
+	@media only screen and (max-width: $bp-medium) {
+		padding: 0.5rem;
+	}
 }
 
 div.inner-page{
@@ -46,4 +53,5 @@ div.mycontainer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
 }
