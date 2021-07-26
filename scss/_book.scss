@@ -18,10 +18,13 @@
 div.inner-page{
 	background-image: none;
 	// background-color: #121212;
+	// background-image: url("../img/blackboardimg3.jpg");
+	border: 10px solid transparent;
+	border-image: url('../img/blackboardborderimg2.jpg') 25 round;
 	background-image: linear-gradient(#181818, #404040);
 	color: white;
 }
-
+	
 div.mycontainer{
 	margin: 3.5rem 3rem;
 	display: grid;
