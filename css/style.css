@@ -44,7 +44,7 @@ body {
 
 .book {
   box-shadow: var(--shadow);
-  background-image: url(../img/woodenboardbg.jpg); }
+  background-image: url("../img/assets/woodenboardbg.jpg"); }
 
 .page {
   padding: 1rem;
@@ -113,7 +113,7 @@ body {
 .user_profile {
   display: flex;
   border: 0.5rem solid transparent;
-  border-image: url("../img/blackboardborderimg2.jpg") 25 round;
+  border-image: url("../img/assets/blackboardborderimg.jpg") 25 round;
   background-image: linear-gradient(#181818, #404040); }
   .user_profile__container {
     width: 100%;
