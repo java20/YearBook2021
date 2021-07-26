@@ -1,82 +1,69 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>YearBook-2021</title>
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body>
-		<main class="main-content">
-			<div class="book" id="book">
-				<div class="my-page page coverpage" data-density="hard">
-					<div class="coverpage__content">
-						<img src="./img/assets/taelogo.png" class="coverpage__logo" />
-						<h1 class="coverpage__heading">YearBook</h1>
-						<p class="coverpage__heading-sub">Batch of 2021</p>
-					</div>
-				</div>
-				<div class="my-page page">
-					<h1 class="text-center pt-1">Content Table</h1>
-					<ul>
-						<li>
-							<a href="#" onclick="jumpToPage()">ProfilePage</a>
-						</li>
-					</ul>
-				</div>
-				<div class="my-page page user_profile">
-					<div class="user_profile__container">
-						<figure class="user_profile__card">
-							<img src="img\profileimages\AISHWARYAProfile.JPG" alt="Tushar Gaikawad" class="user_profile__image" />
-							<figcaption class="user_profile__name">Tushar kashinath Gaikawad</figcaption>
-						</figure>
-						<figure class="user_profile__card">
-							<img src="./img/SatishProfile.png" alt="Satish Belwadkar" class="user_profile__image" />
-							<figcaption class="user_profile__name">Satish Belwadkar</figcaption>
-						</figure>
-						<figure class="user_profile__card">
-							<img src="./img/DayanandProfile.jpeg" alt="Dayanand More" class="user_profile__image" />
-							<figcaption class="user_profile__name">Dayanand Sampat More</figcaption>
-						</figure>
-						<figure class="user_profile__card">
-							<img src="./img/SnehaProfile.jpeg" alt="Sneha Patil" class="user_profile__image" />
-							<figcaption class="user_profile__name">Sneha Sambhaji Patil</figcaption>
-						</figure>
-					</div>
-				</div>
-				<div class="my-page page">page 3</div>
-				<div class="my-page page" data-density="hard">page 4</div>
-				<div class="my-page page backpage">
-					<div class="backpage__content">
-						<p class="backpage__quotes">
-							&ldquo; Here's to the nights that turned into mornings with the friends that turned into
-							family.&rdquo;
-						</p>
-					</div>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>YearBook-2021</title>
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<main class="main-content">
+		<div class="book" id="book">
+			<div class="my-page page coverpage" data-density="hard">
+				<div class="coverpage__content">
+					<img src="./img/assets/taelogo.png" class="coverpage__logo" />
+					<h1 class="coverpage__heading">YearBook</h1>
+					<p class="coverpage__heading-sub">Batch of 2021</p>
 				</div>
 			</div>
-		</main>
-	</body>
+			<div class="my-page page">
+				<h1 class="text-center pt-1">Content Table</h1>
+				<ul>
+					<li>
+						<a href="#" onclick="jumpToPage()">ProfilePage</a>
+					</li>
+				</ul>
+			</div>
+			<div id='profilePages'>
 
-	<script src="./js/page-flip.browser.js"></script>
+			</div>
+			<div class="my-page page">page 3</div>
+			<div class="my-page page" data-density="hard">page 4</div>
+			<div class="my-page page backpage">
+				<div class="backpage__content">
+					<p class="backpage__quotes">
+						&ldquo; Here's to the nights that turned into mornings with the friends that turned into
+						family.&rdquo;
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
 
-	<script>
-		const pageFlip = new St.PageFlip(document.getElementById("book"), {
-			width: 550, // base page width
-			height: 733, // base page height
+<script src="./js/page-flip.browser.js"></script>
+<script src='./js/profilecreate.js'></script>
 
-			size: "stretch",
-			// set threshold values:
-			minWidth: 315,
-			maxWidth: 1000,
-			minHeight: 420,
-			maxHeight: 1350,
-			showCover: true,
-			flippingTime: 500,
-		});
-		pageFlip.loadFromHTML(document.querySelectorAll(".my-page"));
+<script>
+	const pageFlip = new St.PageFlip(document.getElementById("book"), {
+		width: 550, // base page width
+		height: 733, // base page height
 
-		function jumpToPage() {
-			pageFlip.flip(5, "bottom");
-		}
-	</script>
+		size: "stretch",
+		// set threshold values:
+		minWidth: 315,
+		maxWidth: 1000,
+		minHeight: 420,
+		maxHeight: 1350,
+		showCover: true,
+		flippingTime: 500,
+	});
+	pageFlip.loadFromHTML(document.querySelectorAll(".my-page"));
+
+	function jumpToPage() {
+		pageFlip.flip(5, "bottom");
+	}
+</script>
+
 </html>

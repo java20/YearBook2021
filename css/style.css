@@ -150,8 +150,9 @@ body {
     object-position: top center; }
     @media only screen and (max-width: 56.25em) {
       .user_profile__image {
-        width: 8rem;
-        height: 8rem; } }
+        width: 9rem;
+        height: 9rem; } }
   .user_profile__name {
     font-family: var(--font-signature);
-    color: var(--color-golden); }
+    color: var(--color-golden);
+    text-transform: capitalize; }

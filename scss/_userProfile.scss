@@ -42,13 +42,14 @@
 		padding: 0.5rem;
 		object-position: top center;
 		@media only screen and (max-width: $bp-medium) {
-			width: 8rem;			// values changed from 9 to 8 
-			height: 8rem;			// values changed from 9 to 8
+			width: 9rem;			// values changed from 9 to 8 
+			height: 9rem;			// values changed from 9 to 8
 		}
 	}
 
 	&__name {
 		font-family: var(--font-signature);
 		color: var(--color-golden);
+		text-transform: capitalize;
 	}
 }
