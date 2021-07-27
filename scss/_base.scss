@@ -21,7 +21,8 @@
 
 	// SHADOWS
 	--shadow: 5px 5px 2rem 9px var(--color-grey-light2);
-	--shadow2: 5px 1px 1rem 10px var(--color-grey-light1);
+	--shadow2: 5px 1px 1rem 10px var(--color-grey-dark1);
+	--golden-page-border: url("../img/assets/blackboardborderimg.jpg") 25 round;
 }
 
 *,
@@ -46,4 +47,26 @@ body {
 		font-size: 55%;
 		background-image: url(../img/woodenboardbg.jpg);
 	}
+	scroll-behavior: smooth;
+	// overflow-y: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgba(241, 241, 241, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #f2f2f200;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #f2f2f2;
 }

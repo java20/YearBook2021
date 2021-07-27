@@ -1,11 +1,20 @@
 .book {
-	box-shadow: var(--shadow);
-	background-image: url('../img/assets/woodenboardbg.jpg');
+	&:first-child,
+	&:last-child {
+		box-shadow: var(--shadow);
+	}
+	background-image: url("../img/assets/woodenboardbg.jpg");
 }
 
 .page {
 	padding: 1rem;
-	box-shadow: var(--shadow2);
+	&:first-child,
+	&:last-child {
+		box-shadow: var(--shadow2);
+	}
+	&:nth-child(even) {
+		border-right: 1px solid #000000a3;
+	}
 	// background-color: white;
 
 	// background-color: #ffffff;
@@ -15,6 +24,30 @@
 	background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 	@media only screen and (max-width: $bp-medium) {
 		padding: 0.5rem;
+	}
+
+	&__section {
+		background: linear-gradient(#181818, #404040), url("./../img/assets/conf2.jpg");
+		&__title {
+			margin: 50% 0;
+
+			font-family: var(--font-cover);
+			font-size: 5rem;
+			font-weight: 300;
+			letter-spacing: 0.5rem;
+			text-align: center;
+			color: transparent;
+
+			background: url("./../img/assets/golden.jpg") no-repeat center center;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			filter: brightness(250%);
+
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 3.5rem;
+			}
+		}
 	}
 }
 

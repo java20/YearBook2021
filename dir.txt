@@ -1,0 +1,21 @@
+ Volume in drive E is Study & more
+ Volume Serial Number is FAAA-0960
+
+ Directory of E:\Projects\Other Project\YearBook2021
+
+26-07-2021  PM 10:06    <DIR>          .
+26-07-2021  PM 10:06    <DIR>          ..
+26-07-2021  PM 09:26    <DIR>          .cache
+26-07-2021  PM 09:26                21 .gitignore
+26-07-2021  PM 08:48    <DIR>          css
+26-07-2021  PM 09:05    <DIR>          data
+26-07-2021  PM 10:06                 0 dir.txt
+26-07-2021  PM 08:48    <DIR>          img
+26-07-2021  PM 09:25             1,822 index.html
+26-07-2021  PM 09:26    <DIR>          js
+26-07-2021  PM 09:48    <DIR>          node_modules
+26-07-2021  PM 09:48           414,822 package-lock.json
+26-07-2021  PM 09:48             1,256 package.json
+26-07-2021  PM 08:48    <DIR>          scss
+               5 File(s)        417,921 bytes
+               9 Dir(s)  73,970,659,328 bytes free
