@@ -35,7 +35,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     body {
       font-size: 55%;
-      background-image: url(../img/woodenboardbg.jpg); } }
+      background-image: url("../img/assets/woodenboardbg.jpg"); } }
 
 /* width */
 ::-webkit-scrollbar {
