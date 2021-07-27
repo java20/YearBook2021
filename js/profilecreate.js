@@ -15,7 +15,7 @@ const student_responses = [
   {
     "Full Name": "Azhar Hakim",
     "Small Message or Quotes": "Never gone a forget those mesmerizing Days of the College.",
-    "Add Image for your Profile Photo": "img\\profileimages\\AzharProfile.jpg",
+    "Add Image for your Profile Photo": "img\\profileimages\\AzharProfile.jpeg",
     "Any message or memories to share": "Kitne jldi ye din chale gaye..\nHaste gaate ye khubsurat lamhe bit gaye...\nNa kabhi socha tha ki wqt itne jldi badalta hai ..\nAisa lagta hai ki kal hi ki baat haii..\nJab hum aye the ye college mei..\nMujhe yaad hai woh wqt subah ka tha .\nTazi hawayee chal rahe the khuhnuma mosam tha.. \nWo pagal se jaan lagane wale yaar the ..\nWo daat , pyaar ke sath dil se padane wale staff the..\nHar wqt mauj mashti ke sath chalte chalte...\nYe akhri padav aa gaya hai  ab..\nYe college ki yaadeii jo dil ke bakse  me band ho chuke hai ab..\nNa kabhi bhulenge ya bhul payenge  ye Hansen Pal ..\nAisa lagta hai ki kal hi ki baat hai jab hum sab sath chalte the college me apne yaaro ke sang...\nAzhar Hakim",
     "Any photos or video with college, Faculty, Friends": "https://drive.google.com/open?id=19Q2RsJxqNGv2Sbij1o8nE_X3_cGQxDQ6",
     "Any Description of event": "Celebration of TEACHER'S Day .",
@@ -158,7 +158,7 @@ const student_responses = [
   },
   {
     "Full Name": "Priyanka Hallale",
-    "Small Message or Quotes": "�Live for the moments you can�t put into words� and yes today I am running out of words to write here :) My college life was a beautiful journey ! Every faculty here were so supporting, I thank our Principal Sir who always encouraged, guided and gave us needy facilities. I will surely miss my friends who are so helpful. I would say \"Thanks a million TAE for everything\".",
+    "Small Message or Quotes": "\"Live for the moments you can\'t put into words\" and yes today I am running out of words to write here :) My college life was a beautiful journey ! Every faculty here were so supporting, I thank our Principal Sir who always encouraged, guided and gave us needy facilities. I will surely miss my friends who are so helpful. I would say \"Thanks a million TAE for everything\".",
     "Add Image for your Profile Photo": "img\\profileimages\\PriyankaProfile.jpg",
     "Any message or memories to share": "KJ college fest had 3-4 anchoring auditions, on my 1st day of audition I was very nervous seeing so many students from all 4 KJ institute who came for audition, they were so strong and great in speaking ! The movement I had to stand on stage and speak for audition I was numb, I couldn't speak a single word ! I said sorry and was walking out of the room suddenly the judge stopped me and said \"Its ok, this happens for new comers\" He motivated me to speak up and yes I was selected in audition and meanwhile won Gold Medal in anchoring, it was great opportunity for me to stand alone in front of such a huge crowd and to make audience enjoy my anchoring with applause was challenging experience !!! After few days of winning this Gold medal I was travelling with my mother in crowded local bus, I was away from my mom and my face was covered with stole still two unknown girls from KJ college who were able to recognize me as KJ fest anchor and my mother was sitting next to them, they appreciated my anchoring, and they were repeating my dialogue line by line :) My mom was so happy that day, this was my first recognition for anchoring, later this kept on happening with me, many people appreciated my work. This was possible only because of that 2nd opportunity for anchoring audition, I can't put in words my thankfulness to this college who gave me opportunities, platform and name. Thanks a million !",
     "Any photos or video with college, Faculty, Friends": "https://drive.google.com/open?id=1sN5rA8BUakDLVvmmZ44e0N-iD3v8BWic",
@@ -218,7 +218,7 @@ const student_responses = [
   },
   {
     "Full Name": "Shahid Khan",
-    "Small Message or Quotes": "Though we were robbed of our precious 1� year here, the time spent here was really the days of our lives!!",
+    "Small Message or Quotes": "Though we were robbed of our precious 1½ year here, the time spent here was really the days of our lives!!",
     "Add Image for your Profile Photo": "img\\profileimages\\ShahidProfile.jpg",
     "Any message or memories to share": "During our FE, we got one off!! And guess what were we doing!! Playing mini militia on the same server shouting, yelling even hitting our teammates.",
     "Any photos or video with college, Faculty, Friends": "https://drive.google.com/open?id=1xXYCCpGNL4TADEiDupOybFbMiOXtAbsW",
@@ -321,9 +321,38 @@ function loadProfiles() {
 					</div>
 				</div>
   `
-      ele.insertAdjacentHTML("beforeend",markup)
+      ele.insertAdjacentHTML("beforeend",markup);
     }
   }
 }
 
-loadProfiles();
+function loadQuotes(){
+  let ele = document.getElementById('quotespages');
+  let color_pallete = ['#e68200', '#8b7add', '#e67072', '#6bcbef', '#91ab01', '#00b33e', '#72cc92']
+  let markup;
+  for (let i = 0; i < student_responses.length; i++) {
+    markup = `
+    <div class='quotes__container'>
+      <div>
+        <p class='quotes__container__author'>${student_responses[i]["Full Name"]}</p>
+        <p>${student_responses[i]["Small Message or Quotes"]}</p>
+      </div>
+    </div>
+    `
+    ele.insertAdjacentHTML("beforeend",markup);
+
+    document.getElementsByClassName('quotes__container__author')[i].style.color = color_pallete[i%7];
+  }
+
+// let authors = document.getElementsByClassName('quotes__container__author');
+// 
+// for (let i = 0; i < student_responses.length; i++) {
+//   authors[i].style.color = '#6bcbef'
+// }
+
+}
+
+// loadProfiles();
+
+loadQuotes();
+

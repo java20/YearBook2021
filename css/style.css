@@ -156,3 +156,45 @@ body {
     font-family: var(--font-signature);
     color: var(--color-golden);
     text-transform: capitalize; }
+
+.quotes {
+  background-image: url(../img/assets/quotesbg1.png);
+  overflow-y: scroll; }
+  .quotes__container:nth-of-type(odd) {
+    display: flex;
+    flex-grow: 0;
+    color: white;
+    background-color: #075E54;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0px 5px 5px 5px;
+    float: left;
+    width: 22rem; }
+    @media only screen and (max-width: 56.25em) {
+      .quotes__container:nth-of-type(odd) {
+        width: 12rem;
+        font-size: 0.7rem; } }
+  .quotes__container:nth-of-type(even) {
+    display: flex;
+    flex-grow: 0;
+    color: white;
+    background-color: #075E54;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px 0px 5px 5px;
+    float: right;
+    width: 22rem; }
+    @media only screen and (max-width: 56.25em) {
+      .quotes__container:nth-of-type(even) {
+        width: 12rem;
+        font-size: 0.7rem; } }
+
+.quotes__container__author {
+  color: #e68200;
+  font-weight: bolder;
+  padding-bottom: 0.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .quotes__container__author {
+      padding-bottom: 0.2rem; } }
