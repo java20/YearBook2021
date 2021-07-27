@@ -1,0 +1,11 @@
+ Volume in drive E is Study & more
+ Volume Serial Number is FAAA-0960
+
+ Directory of E:\Projects\Other Project\YearBook2021\img\Event\tejaswiniimages
+
+26-07-2021  PM 10:09    <DIR>          .
+26-07-2021  PM 10:09    <DIR>          ..
+26-07-2021  PM 10:09                 0 dir.txt
+26-07-2021  PM 08:48        24,232,928 Video2_20210709_003221_294 - Tejaswini Nikam.mp4
+               2 File(s)     24,232,928 bytes
+               2 Dir(s)  73,970,655,232 bytes free
