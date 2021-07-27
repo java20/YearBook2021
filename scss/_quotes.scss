@@ -1,7 +1,28 @@
 .quotes{
 	background-image: url(../img/assets/quotesbg1.png);
+    background-size: cover
+    ;
     overflow-y: scroll;
     
+    &__header{
+        background-color: #005e54;
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1rem;
+		}
+
+        &__status{
+            font-size: 0.9rem;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.7rem;
+            }
+        }
+        
+
+    }
 
     &__container:nth-of-type(odd){
         display: flex;
@@ -11,6 +32,7 @@
         font-size: 0.9rem;
         padding: 0.5rem 0.5rem;
         margin: 0.5rem 0;
+        margin-left: 0.7rem;
         border-radius: 0px 5px 5px 5px;
         float: left;
         width: 22rem;
@@ -28,6 +50,7 @@
         font-size: 0.9rem;
         padding: 0.5rem 0.5rem;
         margin: 0.5rem 0;
+        margin-right: 0.7rem;
         border-radius: 5px 0px 5px 5px;
         float: right;
         width: 22rem;
@@ -47,5 +70,6 @@
         padding-bottom: 0.2rem;
     }
 }
+
 
 // #e68200, #8b7add, #e67072, #6bcbef, #91ab01,#00b33e, #72cc92
