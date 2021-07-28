@@ -1,5 +1,7 @@
 .main-content {
 	grid-column: 2/-2;
+	z-index: 1;
+	grid-row: 1/2;
 	align-self: center;
 	display: flex;
 	align-items: center;

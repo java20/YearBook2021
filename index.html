@@ -11,9 +11,17 @@
 	<meta charset="UTF-8">
 	<title>YearBook-2021</title>
 	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+	<div class='menu-bar'>
+		<button class='menu-bar__button' onclick="jumpToFirstPage()"><i class="fas fa-backward"></i></button>
+		<button id='prev_button' class='menu-bar__button' onclick="jumpToPrevPage()"><i class="fas fa-chevron-left"></i></button>
+		<input readonly id='page_number' class='menu-bar__box' type='text' />
+		<button class='menu-bar__button' onclick="jumpToNextPage()"><i class="fas fa-chevron-right"></i></button>
+		<button class='menu-bar__button' onclick="jumpToLastPage()"><i class="fas fa-forward"></i></button>
+	</div>
 	<main class="main-content">
 		<div class="book" id="book">
 			<div class="my-page page coverpage" data-density="hard">
@@ -52,7 +60,7 @@
 		
 				</div>
 			</div>
-			<div class="my-page page" data-density="soft">page</div>
+			<!-- <div class="my-page page" data-density="soft">page</div> -->
 			<div class="my-page page" data-density="hard">page</div>
 			<div class="my-page page backpage">
 				<div class="backpage__content">
@@ -80,12 +88,36 @@
 			maxWidth: 1000,
 			minHeight: 420,
 			maxHeight: 1350,
-			showCover: true,
+			showCover: true
 		});
 		pageFlip.loadFromHTML(document.querySelectorAll(".my-page"));
 
-		function jumpToPage() {
-			pageFlip.flip(5, "bottom");
+		function jumpToFirstPage() {
+			pageFlip.flip(0, "top");
 		}
+
+		function jumpToLastPage() {
+			pageFlip.flip(pageFlip.getPageCount()-1, "top");
+		}
+
+		function jumpToPrevPage(){
+			pageFlip.flipPrev('top');
+		}
+
+		function jumpToNextPage(){
+			pageFlip.flipNext('top');
+		}
+
+
+		let ele = document.getElementById('page_number');
+		let pageValue = 1;
+		pageValue = pageValue +' / '+pageFlip.getPageCount(); 
+		ele.value = pageValue;
+
+		pageFlip.on('flip', (e) => {
+			pageValue = e.data+1 +' / '+pageFlip.getPageCount(); 
+			ele.value = pageValue;
+		});
+
 	</script>
 </html>

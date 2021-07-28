@@ -55,6 +55,8 @@ body {
 
 .main-content {
   grid-column: 2/-2;
+  z-index: 1;
+  grid-row: 1/2;
   align-self: center;
   display: flex;
   align-items: center;
@@ -330,3 +332,33 @@ body {
     object-fit: cover;
     border-radius: 1.5rem;
     border: 0.2rem dotted var(--color-golden); }
+
+.menu-bar {
+  z-index: 2;
+  grid-column: 2/-2;
+  grid-row: 1/2;
+  justify-self: center; }
+  @media only screen and (max-width: 56.25em) {
+    .menu-bar {
+      grid-row: 2/2; } }
+  .menu-bar__button {
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+    color: white; }
+    @media only screen and (max-width: 56.25em) {
+      .menu-bar__button {
+        padding: 0.25rem 1.25rem;
+        font-size: 1rem; } }
+  .menu-bar__box {
+    padding: 0.5rem 0;
+    color: white;
+    width: 3rem;
+    border: 1px solid white;
+    background-color: #181818; }
+    @media only screen and (max-width: 56.25em) {
+      .menu-bar__box {
+        padding: 0.5rem 0;
+        width: 3rem; } }
+  .menu-bar button {
+    background: none;
+    border: none; }
