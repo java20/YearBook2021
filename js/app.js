@@ -7,7 +7,6 @@ import { eventRender } from "./eventRender";
 import { memoriesRender } from "./memoriesRender";
 loadProfiles();
 loadQuotes();
-// window.data = data;
 
 eventRender();
 memoriesRender();
