@@ -31,14 +31,103 @@
 					<p class="coverpage__heading-sub">Batch of 2021</p>
 				</div>
 			</div>
-			<div class="my-page page">
-				<!-- <h1 class="text-center pt-1">Content Table</h1>
-				<ul>
-					<li>
-						<a href="#" onclick="jumpToPage()">ProfilePage</a>
-					</li>
-				</ul> -->
+			<div class="my-page page content-page" data-density="soft">
+
 			</div>
+			<div class="my-page welcome-page" data-density="soft">
+				<div class='welcome-page__container'>
+					<img src='./img/assets/taelogo.png' class='welcome-page__container__taelogo' alt='taelogo'>
+				</div>
+				<div class='welcome-page__container'>
+					<h3 class='welcome-page__container__text'>KJ's Educational Institutes</h3>
+				</div>
+				<div class='welcome-page__container'>
+					<h1 class='welcome-page__container__yellowtext'>Trinity Academy of Engineering, Pune</h1>
+				</div>
+				<div class='welcome-page__container'>
+					<p class='welcome-page__container__paratext'>
+						( Approved by AICTE, New Delhi, Govt. of Maharashtra & affiliated to Savitribai Phule Pune University, DTE Code : EN6634)
+					</p>
+				</div>
+				<div class='welcome-page__container'>
+					<h2 class='welcome-page__container__yellowtext'>Accredited by NAAC with ‘A’ Grade</h2>
+				</div>
+				<div class='welcome-page__container'>
+					<img src='./img/assets/naaclogo.png' class='welcome-page__container__naaclogo' alt='taelogo'>
+				</div>
+				<div class='welcome-page__container'>
+					<h4 class='welcome-page__container__farewelltext'>Department of Computer Engineering</h4>
+				</div>
+				<div class='welcome-page__container'>
+					<h4 class='welcome-page__container__farewelltext'>Farewell Program</h4>
+				</div>
+				<div class='welcome-page__container'>
+					<h3 class='welcome-page__container__farewelltext'>19-20</h4>
+				</div>
+				<div class='welcome-page__container'>
+					<h3 class='welcome-page__container__farewelltext'>&</h4>
+				</div>
+				<div class='welcome-page__container'>
+					<h3 class='welcome-page__container__farewelltext'>20-21 Batch</h4>
+				</div>
+				<div class='welcome-page__container'>
+					<h3 class='welcome-page__container__welcometext'>Welcomes you</h3>
+				</div>
+				<div class='welcome-page__container'>
+					<p class='welcome-page__container__paratext1'>
+						Dr. Nilesh. J. Uke
+					</p>
+				</div>
+				<div class='welcome-page__container'>
+					<p class='welcome-page__container__paratext2'>
+						Principal
+					</p>
+				</div>
+				<div class='welcome-page__container'>
+					<p class='welcome-page__container__paratext1'>
+						Dr. Nikita Kulkarni
+					</p>
+				</div>
+				<div class='welcome-page__container'>
+					<p class='welcome-page__container__paratext2'>
+						HOD
+					</p>
+				</div>
+			</div>
+			<!-- <div class="my-page page content-page" data-density="soft">
+				<h1>Table of content</h1>
+				<ol>
+					<li class='content-page__title'>
+						<h3>Student Profile's</h3>
+						<ul class='content-page__list' id='profilepageindex'>
+							<li>
+								<a href='#'>Aishwarya sunil kardile, Azhar Hakim, Bibek Sarkar, Biraj Sarkar</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3>Student Event Message</h3>
+					</li>
+					<li>
+						<h3>Student Event Photos</h3>
+					</li>
+					<li class='content-page__title'>
+						<h3>Student Memories Messages</h3>
+						<ul class='content-page__list'>
+							<li>
+								<a href='#'></a>
+								<a href='#'></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<h3>Student Memories Photos</h3>
+					</li>
+					<li>
+						<h3>Student Quote's</h3>
+					</li>
+				</ol>
+			</div> -->
 			<div class="my-page page page__section">
 				<h3 class="page__section__title">Profile Photos</h3>
 			</div>
@@ -77,7 +166,7 @@
 	<script src="./js/bundle.js"></script>
 
 	<script>
-		const pageFlip = new St.PageFlip(document.getElementById("book"), {
+		var pageFlip = new St.PageFlip(document.getElementById("book"), {
 			width: 550, // base page width
 			height: 733, // base page height
 

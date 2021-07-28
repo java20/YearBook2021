@@ -6948,7 +6948,9 @@ var _profiles = require("./data/profiles");
 
 function loadProfiles() {
   var ele = document.getElementById("profilePages");
+  var ele2 = document.getElementById('profilepageindex');
   var markup;
+  var profilenames;
 
   for (var i = 0; i < _profiles.profiles.length; i++) {
     if (i % 4 == 0) {

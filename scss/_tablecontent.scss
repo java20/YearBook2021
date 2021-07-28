@@ -1,0 +1,14 @@
+.content-page{
+    font-size: 1rem;
+    color:#181818;
+    padding-left: 1rem;
+
+    &__title{
+        padding-left: 1rem;
+    }
+
+    &__list{
+        text-decoration: none;
+        padding-left: 1rem;
+    }
+}

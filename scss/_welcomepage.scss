@@ -1,0 +1,95 @@
+.welcome-page{
+    background-color: #003a6a;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__taelogo{
+            width: 9rem;
+            height: auto;
+            @media only screen and (max-width: $bp-medium) {
+                width: 5rem;
+            }
+        }
+
+        &__naaclogo{
+            padding-top: 1rem;
+            width: 9rem;
+            height: auto;
+            @media only screen and (max-width: $bp-medium) {
+                width: 5rem;
+                padding-top: 0.5rem;
+            }
+        }
+
+        &__text{
+            color: #fcfcfc;
+            font-size: 2rem;
+            text-align: center;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.8rem;
+            }
+        }
+
+        &__welcometext{
+            text-decoration: underline;
+            font-size: 2rem;
+            font-family: var(--font-quotes);
+            color: red;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.8rem;
+            }
+        }
+
+        &__farewelltext{
+            text-decoration: underline;
+            font-size: 2rem;
+            font-family: var(--font-quotes);
+            color: #fcfcfc;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.8rem;
+            }
+        }
+
+        &__yellowtext{
+            color: #ffcc00;
+            font-size: 2rem;
+            text-align: center;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.8rem;
+            }
+        }
+
+        &__paratext{
+            color: #fcfcfc;
+            font-size: 1rem;
+            text-align: center;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.5rem;
+            }
+        }
+
+        &__paratext1{
+            color: #fcfcfc;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            padding-top: 1rem;
+            float: left;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.7rem;
+                padding-top: 0.5rem;
+            }
+        }
+
+        &__paratext2{
+            color: #fcfcfc;
+            font-size: 1rem;
+            float: right;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}   

@@ -2,7 +2,9 @@ import { profiles } from "./data/profiles";
 
 export function loadProfiles() {
 	let ele = document.getElementById("profilePages");
+	let ele2 = document.getElementById('profilepageindex');
 	let markup;
+	let profilenames;
 	for (let i = 0; i < profiles.length; i++) {
 		if (i % 4 == 0) {
 			markup = `
