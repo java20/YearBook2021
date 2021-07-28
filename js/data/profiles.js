@@ -1,9 +1,63 @@
-export const profiles = [
+export let profiles = [
+	{
+		"Full Name": "Vinayak Tupe",
+		"Small Message or Quotes":
+			".",
+		"Add Image for your Profile Photo": "img\\profileimages\\vinayakProfile.png",
+		"Any message or memories to share": "",
+		"Any photos or video with college, Faculty, Friends": "",
+		"Any Description of event": "",
+		"Any photos or video of event": "",
+		"Title for Memories": "",
+		"Title for Event": "",
+		"Email Address": "",
+	},
+	{
+		"Full Name": "Harsh Shah",
+		"Small Message or Quotes":
+			"A Journey that is will never be forgotten",
+		"Add Image for your Profile Photo": "img\\profileimages\\HarshProfile.JPG",
+		"Any message or memories to share": "",
+		"Any photos or video with college, Faculty, Friends": "",
+		"Any Description of event": "",
+		"Any photos or video of event": "",
+		"Title for Memories": "",
+		"Title for Event": "",
+		"Email Address": "",
+	},
+	{
+		"Full Name": "Priyanka Hallale",
+		"Small Message or Quotes":
+			'\"Live for the moments you can\'t put into words\" and yes today I am running out of words to write here :) My college life was a beautiful journey ! Every faculty here were so supporting, I thank our Principal Sir who always encouraged, guided and gave us needy facilities. I will surely miss my friends who are so helpful. I would say "Thanks a million TAE for everything".',
+		"Add Image for your Profile Photo": "img\\profileimages\\PriyankaProfile.jpg",
+		"Any message or memories to share":
+			"KJ college fest had 3-4 anchoring auditions, on my 1st day of audition I was very nervous seeing so many students from all 4 KJ institute who came for audition, they were so strong and great in speaking ! The movement I had to stand on stage and speak for audition I was numb, I couldn't speak a single word ! I said sorry and was walking out of the room suddenly the judge stopped me and said \"Its ok, this happens for new comers\" He motivated me to speak up and yes I was selected in audition and meanwhile won Gold Medal in anchoring, it was great opportunity for me to stand alone in front of such a huge crowd and to make audience enjoy my anchoring with applause was challenging experience !!! After few days of winning this Gold medal I was travelling with my mother in crowded local bus, I was away from my mom and my face was covered with stole still two unknown girls from KJ college who were able to recognize me as KJ fest anchor and my mother was sitting next to them, they appreciated my anchoring, and they were repeating my dialogue line by line :) My mom was so happy that day, this was my first recognition for anchoring, later this kept on happening with me, many people appreciated my work. This was possible only because of that 2nd opportunity for anchoring audition, I can't put in words my thankfulness to this college who gave me opportunities, platform and name. Thanks a million !",
+		"Any photos or video with college, Faculty, Friends":
+			"https://drive.google.com/open?id=1sN5rA8BUakDLVvmmZ44e0N-iD3v8BWic",
+		"Any Description of event": "",
+		"Any photos or video of event": "",
+		"Title for Memories": "KJ Fest Malhar Anchoring Event",
+		"Title for Event": "",
+		"Email Address": "hallalepihu@gmail.com",
+	},
 	{
 		"Full Name": "Aishwarya sunil kardile",
 		"Small Message or Quotes":
 			"College life is that part of your life that you are going to relive in your memories till you breathe",
 		"Add Image for your Profile Photo": "img\\profileimages\\AISHWARYAProfile.JPG",
+		"Any message or memories to share": "",
+		"Any photos or video with college, Faculty, Friends": "",
+		"Any Description of event": "",
+		"Any photos or video of event": "",
+		"Title for Memories": "",
+		"Title for Event": "",
+		"Email Address": "",
+	},
+	{
+		"Full Name": "Amit Rathod",
+		"Small Message or Quotes":
+			"I will miss all the teachers and the professors who have imbibed good values in us other than educating engineering techniques. Thank you to the entire college and the staff",
+		"Add Image for your Profile Photo": "img\\profileimages\\AmitProfile.jpg",
 		"Any message or memories to share": "",
 		"Any photos or video with college, Faculty, Friends": "",
 		"Any Description of event": "",
@@ -169,21 +223,6 @@ export const profiles = [
 		"Email Address": "priyajadhav51@gmail.com",
 	},
 	{
-		"Full Name": "Priyanka Hallale",
-		"Small Message or Quotes":
-			'\"Live for the moments you can\'t put into words\" and yes today I am running out of words to write here :) My college life was a beautiful journey ! Every faculty here were so supporting, I thank our Principal Sir who always encouraged, guided and gave us needy facilities. I will surely miss my friends who are so helpful. I would say "Thanks a million TAE for everything".',
-		"Add Image for your Profile Photo": "img\\profileimages\\PriyankaProfile.jpg",
-		"Any message or memories to share":
-			"KJ college fest had 3-4 anchoring auditions, on my 1st day of audition I was very nervous seeing so many students from all 4 KJ institute who came for audition, they were so strong and great in speaking ! The movement I had to stand on stage and speak for audition I was numb, I couldn't speak a single word ! I said sorry and was walking out of the room suddenly the judge stopped me and said \"Its ok, this happens for new comers\" He motivated me to speak up and yes I was selected in audition and meanwhile won Gold Medal in anchoring, it was great opportunity for me to stand alone in front of such a huge crowd and to make audience enjoy my anchoring with applause was challenging experience !!! After few days of winning this Gold medal I was travelling with my mother in crowded local bus, I was away from my mom and my face was covered with stole still two unknown girls from KJ college who were able to recognize me as KJ fest anchor and my mother was sitting next to them, they appreciated my anchoring, and they were repeating my dialogue line by line :) My mom was so happy that day, this was my first recognition for anchoring, later this kept on happening with me, many people appreciated my work. This was possible only because of that 2nd opportunity for anchoring audition, I can't put in words my thankfulness to this college who gave me opportunities, platform and name. Thanks a million !",
-		"Any photos or video with college, Faculty, Friends":
-			"https://drive.google.com/open?id=1sN5rA8BUakDLVvmmZ44e0N-iD3v8BWic",
-		"Any Description of event": "",
-		"Any photos or video of event": "",
-		"Title for Memories": "KJ Fest Malhar Anchoring Event",
-		"Title for Event": "",
-		"Email Address": "hallalepihu@gmail.com",
-	},
-	{
 		"Full Name": "Rohan Bhalerao",
 		"Small Message or Quotes": "An investment in knowledge always pays the best interest",
 		"Add Image for your Profile Photo": "img\\profileimages\\RohanProfile.jpeg",
@@ -317,5 +356,5 @@ export const profiles = [
 		"Title for Memories": "",
 		"Title for Event": "",
 		"Email Address": "",
-	},
+	}
 ];
