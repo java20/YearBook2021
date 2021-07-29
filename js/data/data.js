@@ -150,6 +150,16 @@ export const data = [
 		},
 	},
 	{
+		Harshimages: {
+			Event: ["zensaract.mp4"],
+			Memories: [
+				"img1.jpeg",
+				"img2.jpeg",
+				"img3.jpeg",
+			],
+		},
+	},
+	{
 		Nehaimages: {
 			Event: [],
 			Memories: ["img1.jpeg"],
