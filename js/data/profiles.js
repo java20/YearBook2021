@@ -2,7 +2,7 @@ export let profiles = [
 	{
 		"Full Name": "Vinayak Tupe",
 		"Small Message or Quotes":
-			".",
+			"Be You",
 		"Add Image for your Profile Photo": "img\\profileimages\\vinayakProfile.png",
 		"Any message or memories to share": "",
 		"Any photos or video with college, Faculty, Friends": "",

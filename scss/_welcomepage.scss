@@ -26,16 +26,22 @@
 
         &__text{
             color: #fcfcfc;
-            font-size: 2rem;
+            word-spacing: 0.1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1rem;
+            font-size: 1.5rem;
             text-align: center;
             @media only screen and (max-width: $bp-medium) {
-                font-size: 0.8rem;
+                word-spacing: 0.1rem;
+                 letter-spacing: 0.1rem;
+                font-size: 0.5rem;
             }
         }
 
         &__welcometext{
             text-decoration: underline;
             font-size: 2rem;
+            line-height: 1rem;
             font-family: var(--font-quotes);
             color: red;
             @media only screen and (max-width: $bp-medium) {

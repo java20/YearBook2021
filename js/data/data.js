@@ -172,8 +172,8 @@ export const data = [
 	},
 	{
 		priyankaimages: {
-			Event: [],
-			Memories: ["img1.jpg"],
+			Event: ["img2.jpeg", "img4.jpeg", "img5.jpeg"],
+			Memories: ["img1.jpeg", "img3.jpeg", "img6.jpeg"],
 		},
 	},
 	{

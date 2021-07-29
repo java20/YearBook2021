@@ -6671,7 +6671,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.profiles = void 0;
 var profiles = [{
   "Full Name": "Vinayak Tupe",
-  "Small Message or Quotes": ".",
+  "Small Message or Quotes": "Be You",
   "Add Image for your Profile Photo": "img\\profileimages\\vinayakProfile.png",
   "Any message or memories to share": "",
   "Any photos or video with college, Faculty, Friends": "",
@@ -7068,8 +7068,8 @@ var data = [{
   }
 }, {
   priyankaimages: {
-    Event: [],
-    Memories: ["img1.jpg"]
+    Event: ["img2.jpeg", "img4.jpeg", "img5.jpeg"],
+    Memories: ["img1.jpeg", "img3.jpeg", "img6.jpeg"]
   }
 }, {
   rohitimages: {
@@ -7556,7 +7556,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56897" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58352" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
